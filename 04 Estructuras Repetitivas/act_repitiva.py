@@ -7,9 +7,17 @@ for numero in range(101):
 
 #2) Desarrolla un programa que solicite al usuario un número entero y determine la cantidad de
 #dígitos que contiene.
-numero_dig = input("Ingrese un número entero: ")
-cantidad_dig = len(numero_dig)
-print(f"El número ingresado tiene {cantidad_dig} dígitos.")
+
+num = int (input("ingrese un numero: "))
+num_dig = 0
+
+while num > 0:
+    num = num // 10 
+    num_dig += 1
+
+print("la cantidad de digitos es: ", num_dig)
+
+
 
 
 #3) Escribe un programa que sume todos los números enteros comprendidos entre dos valores
